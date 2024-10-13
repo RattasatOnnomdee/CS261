@@ -1,0 +1,159 @@
+@import 'https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato, sans-serif;
+}
+body{
+    background-image: url(/campus-rangsit-3-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.login_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login_page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 5px solid rgba(195, 0, 47, 0.5);
+    padding: 35px 25px;
+    background-color: rgba(195, 0, 47, 0.2);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    height: 25rem;
+}
+
+.login-head{
+    font-size: 25px;
+    margin-bottom:10px;
+    padding: 20px;
+    color: #fff;
+}
+
+.login-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.content{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.content input{
+    background-color: rgba(255, 209, 63, 0.5);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    padding: 20px 15px;
+    width: 100%;
+    font-size: 18px;
+    margin: 0 0 15px 0;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    transition: .1s ease-in;
+}
+::placeholder{
+    color: #fff;
+}
+
+.login-forget{
+    margin-bottom: 20px;
+}
+.login-forget a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    transition: .2s ease-out;
+    position: relative;
+}
+.login-forget a:hover{
+    font-size: 22px;
+}
+
+.login-forget a::after{
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    transition:all .3s ease-in;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 209, 63, 1);
+    /* top: 10px; */
+    border-radius: 15px;
+}
+.login-forget a:hover::after{
+    width: 10%;
+    height: 5px;
+    width: 100%;
+}
+
+
+.login-content .submit{
+    width: 50%;
+    height: 50px;
+    font-size: 22px;
+    background-color: rgba(255, 209, 63, 0.2);
+    backdrop-filter: blur(10px);
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    color: #fff;
+    transition: .2s ease-in;
+    text-align: center;
+    align-items: center;
+    margin: 0 0 15px 0;
+}
+.login-content .submit:hover{
+    background-color: rgba(255, 209, 63, 0.7);
+}
+
+.wrapper{
+    padding: 10px 20px;
+    /* margin-bottom: 10px; */
+    font-size: 10px;
+    color: #fff;
+    margin:0 0 15px 0;
+}
+.wrapper h1{
+    margin-bottom: 10px;
+}
+
+.back{
+    width: 70%;
+    height: 50px;
+    font-size: 22px;
+    background-color: rgba(255, 209, 63, 0.2);
+    backdrop-filter: blur(10px);
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    color: #fff;
+    transition: .2s ease-in;
+    text-align: center;
+    align-items: center;
+    margin: 0 0 15px 0;
+}
+.back:hover{
+    background-color: rgba(255, 209, 63, 0.7);
+}
+
+.emailText{
+    font-size: 25px;
+}
+.success{
+    color: green;
+    font-size: 30px;
+}
