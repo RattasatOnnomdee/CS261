@@ -6,7 +6,7 @@
     font-family: Lato, sans-serif;
 }
 body{
-    background-image: url(/campus-rangsit-3-1.jpg);
+    /* background-image: url(./Frontend/public/img/campus-rangsit-3-1.jpg); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -23,9 +23,9 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 5px solid rgba(195, 0, 47, 0.5);
+    border: 5px solid rgba(195, 0, 47, 0.8);
     padding: 35px 25px;
-    background-color: rgba(195, 0, 47, 0.2);
+    background-color: rgba(195, 0, 47, 0.5);
     backdrop-filter: blur(5px);
     border-radius: 10px;
     height: 25rem;
@@ -51,7 +51,7 @@ body{
     font-size: 20px;
 }
 .content input{
-    background-color: rgba(255, 209, 63, 0.5);
+    background-color: rgba(255, 209, 63, 0.8);
     backdrop-filter: blur(10px);
     color: #fff;
     padding: 20px 15px;
@@ -105,7 +105,7 @@ body{
     width: 50%;
     height: 50px;
     font-size: 22px;
-    background-color: rgba(255, 209, 63, 0.2);
+    background-color: rgba(255, 209, 63, 0.7);
     backdrop-filter: blur(10px);
     border: none;
     cursor: pointer;
@@ -117,7 +117,7 @@ body{
     margin: 0 0 15px 0;
 }
 .login-content .submit:hover{
-    background-color: rgba(255, 209, 63, 0.7);
+    background-color: rgba(255, 209, 63, 0.9);
 }
 
 .wrapper{
@@ -135,7 +135,7 @@ body{
     width: 70%;
     height: 50px;
     font-size: 22px;
-    background-color: rgba(255, 209, 63, 0.2);
+    background-color: rgba(255, 209, 63, 0.7);
     backdrop-filter: blur(10px);
     border: none;
     cursor: pointer;
@@ -147,13 +147,13 @@ body{
     margin: 0 0 15px 0;
 }
 .back:hover{
-    background-color: rgba(255, 209, 63, 0.7);
+    background-color: rgba(255, 209, 63, 0.9);
 }
 
 .emailText{
     font-size: 25px;
 }
 .success{
-    color: green;
+    color: rgb(0, 138, 0);
     font-size: 30px;
 }

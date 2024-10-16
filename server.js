@@ -3,10 +3,10 @@ const app = express();
 const axios = require('axios')
 const path = require('path');
 
-app.use(express.static(path.join(__dirname, '../')));
+app.use(express.static(path.join(__dirname, './Frontend/public')));
 
 app.get('/' ,(req,res) => {
-    res.sendFile(path.join(__dirname,'../' ,'index.html'))
+    res.sendFile(path.join(__dirname,'./Frontend/public' ,'index.html'))
 })
 
 app.get('/api/student-info',async (req,res) => {
@@ -51,4 +51,5 @@ app.get('/api/student-info',async (req,res) => {
 const port = 3000;
 app.listen(port,() => {
     console.log(`Server is running at ${port}`);
+    // console.log(path.join(__dirname,'/Frontend/public'))
 })
