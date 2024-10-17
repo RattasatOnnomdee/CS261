@@ -15,15 +15,23 @@
             </div>
             <div class="login-content" id="login-content">
                 <div class="content">
-                        <input type="email" placeholder="Email" id="email" >
-                        <input type="password" placeholder="StudentID" id="studentID">
+                        <input type="text" placeholder="Username" id="username" >
+                        <input type="password" placeholder="Password" id="password">
                 </div>
+                <button class="show" id="show">Show Password</button>
                 <button class="submit" id="submit">Log In</button>
                 <!-- <div class="wrapper" id="wrapper"></div> -->
             </div>
-            <div class="login-forget">
-                <a href="#">Forget Username Password OR Register?</a>
+            <div class="role">
+                <select name="Role" id="role">
+                    <option value="">Select Role</option>
+                    <option value="Students">Students</option>
+                    <option value="Employees">Teachers</option>
+                </select>
             </div>
+            <!-- <div class="login-forget">
+                <a href="#">Forget Username Password OR Register?</a>
+            </div> -->
         </div>
     </div>
 

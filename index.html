@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="password"],
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+    </style>
+    <title>Show Password Example</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Show Password Example</h2>
+        <form>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+                <input type="checkbox" id="showPassword"> Show Password
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // Select the checkbox and password input elements
+const showPasswordCheckbox = document.getElementById('showPassword');
+const passwordInput = document.getElementById('password');
+
+// Add an event listener to the checkbox
+showPasswordCheckbox.addEventListener('change', function() {
+    // Check if the checkbox is checked
+    if (this.checked) {
+        // If checked, change the input type to 'text'
+        passwordInput.type = 'text';
+    } else {
+        // If not checked, change the input type back to 'password'
+        passwordInput.type = 'password';
+    }
+});
+    </script>
+</body>
+</html>
