@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../public/img/Emblem_of_Thammasat_University.svg.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>TU Login</title>
+</head>
+<body>
+    <div class="login_container">
+        <div class="login_page">
+            <div class="login-head">
+                <h1>TU Login</h1>
+            </div>
+            <div class="login-content" id="login-content">
+                <div class="content">
+                        <input type="text" placeholder="Username" id="username" >
+                        <input type="password" placeholder="Password" id="password">
+                </div>
+                <button class="show" id="show">Show Password</button>
+                <button class="submit" id="submit">Log In</button>
+                <!-- <div class="wrapper" id="wrapper"></div> -->
+            </div>
+            <div class="role">
+                <select name="Role" id="role">
+                    <option value="">Select Role</option>
+                    <option value="Students">Students</option>
+                    <option value="Employees">Employees</option>
+                </select>
+            </div>
+            <!-- <div class="login-forget">
+                <a href="#">Forget Username Password OR Register?</a>
+            </div> -->
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
