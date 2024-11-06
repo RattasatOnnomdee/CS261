@@ -29,25 +29,21 @@ app.post('/api/v1/auth/Ad/verify', async (req, res) => {
         }, {
             headers: {
                 'Content-Type': 'application/json',
-                'Application-Key': 'TU129223f3173ed3c073e7a59c015f51ac7ddc894de3267b7f37a8b2b2050572c3204be11c64765eb33aeb6b8e532336c9'
+                'Application-Key': 'TU0ca85e6f7659be986931f5c0dbeb5948ef456f63b2f9822e05cef3df86fdf309e1fd3aa579aa1917d47a85f69b8dd5d1'
             }
         });
 
-        // Handle the response from the external API
         const apiData = response.data;
 
-        // Create output object to send to the client
         const output = {
             timestamp: Date.now(),
             status: apiData.status,
             message: apiData.message,
-            data: apiData
+            data: apiData,
         };
-        console.log(output)
-        // console.log(PassWord,'and',UserName)
-
-        // console.log(res.json(output))
+        console.log(output.data)
         res.json(output)
+        // res.json(springAPIResponse.data);
     } catch (err) {
         console.error('Error verifying credentials:', err);
 
@@ -60,6 +56,9 @@ app.post('/api/v1/auth/Ad/verify', async (req, res) => {
     }
 });
 
+// app.post("/api/students"(req,res) => {
+//     res.send()
+// })
 
 const port = 3000;
 app.listen(port,() => {

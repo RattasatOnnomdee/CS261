@@ -42,6 +42,23 @@ submit.addEventListener('click', async () => {
             data: apiData.data
         };
 
+        fetch("http://localhost:8080/api/students", {
+            method: "POST",
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json; charset=UTF-8'
+            },
+            body: JSON.stringify({
+                "enName": `${apiData.data.displayname_en}`,
+                "email": `${apiData.data.email}`,
+                "faculty": `${apiData.data.faculty}`,
+                "type": `${apiData.data.type}`,
+                "userName": `${apiData.data.username}`,
+                "password": `${password}`
+
+            })
+        });
+
         // Check if the API response indicates success
         if (output.status === false) {
             console.log("Invalid username or password");
